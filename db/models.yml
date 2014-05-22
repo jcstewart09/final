@@ -1,3 +1,25 @@
+
+Location:
+  - name: string
+  - address: string
+  - loc_photo: string
+  - schedule_link: string
+  - website_link: string
+
+Activity:
+  - activity: string
+  - intensity: string
+  - equipment: string
+
+Type:
+  - name: string
+
+Combo:
+  - activity_id: string
+  - location_id: string
+  - type_id: string
+
+
 # Example table for a typical Book model.
 #
 # Book:
