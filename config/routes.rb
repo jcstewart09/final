@@ -3,6 +3,10 @@ Final::Application.routes.draw do
   # Custom Homepage
   get "/" => "homepage#index"
 
+  # Sign-In and Sign-Out
+
+  get "/login" => 'sessions#login'
+  post "/authenticate" => 'sessions#authenticate'
 
   # Resource: Users
 
@@ -38,6 +42,7 @@ Final::Application.routes.draw do
 
   # --- Read
   get "/activities" => 'activities#index'
+  get "/activities/:id" => 'activities#show'
 
   # -- Update
   get "/activities/:id/edit" => 'activities#edit'

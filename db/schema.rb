@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140525163014) do
+ActiveRecord::Schema.define(version: 20140525190433) do
 
   create_table "activities", force: true do |t|
     t.string "activity"
     t.string "intensity"
     t.string "equipment"
+    t.string "photo_url"
   end
 
   create_table "combos", force: true do |t|

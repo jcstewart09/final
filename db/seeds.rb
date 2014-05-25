@@ -7,14 +7,14 @@ outside = Location.create("name" => "Outside", "address" => "Anywhere Outside", 
 
 
 Activity.delete_all
-bxg = Activity.create("activity" => "Boxing", "intensity" => "high", "equipment" => "gloves, sneakers")
-swmg = Activity.create("activity" => "Swimming", "intensity" => "high", "equipment" => "swimming suit, goggles")
-csft = Activity.create("activity" => "Crossfit", "intensity" => "high", "equipment" => "sneakers")
-rnng = Activity.create("activity" => "Running", "intensity" => "high", "equipment" => "sneakers")
-spng = Activity.create("activity" => "Spinning", "intensity" => "medium", "equipment" => "sneakers or cycling shoes")
-yga = Activity.create("activity" => "Yoga", "intensity" => "low", "equipment" => "yoga mat")
-cyng = Activity.create("activity" => "Cycling", "intensity" => "medium", "equipment" => "bike, sneakers or cycling shoes, helmet")
-wght = Activity.create("activity" => "Weight training", "intensity" => "medium", "equipment" => "weights, sneakers")
+bxg = Activity.create("activity" => "Boxing", "intensity" => "high", "equipment" => "gloves, sneakers", "photo_url" => "http://media.merchantcircle.com/29989482/LAB-Shoot-10-24-81_full.jpeg")
+swmg = Activity.create("activity" => "Swimming", "intensity" => "high", "equipment" => "swimming suit, goggles", "photo_url" => "http://www.nbiaa-asinb.org/userfiles/image/Swimming-%20iStockMedium.jpg")
+csft = Activity.create("activity" => "Crossfit", "intensity" => "high", "equipment" => "sneakers", "photo_url" => "http://fitnesspainfree.com/wp-content/uploads/2013/12/woman-crossfit-torrance.jpg")
+rnng = Activity.create("activity" => "Running", "intensity" => "high", "equipment" => "sneakers", "photo_url" => "http://blog.zensorium.com/wp-content/uploads/2014/04/running-21.jpg")
+spng = Activity.create("activity" => "Spinning", "intensity" => "medium", "equipment" => "sneakers or cycling shoes", "photo_url" => "http://abysportnebolel.sk/wp-content/uploads/2012/12/spinning-2.jpg")
+yga = Activity.create("activity" => "Yoga", "intensity" => "low", "equipment" => "yoga mat", "photo_url" => "http://www.pretzels-yoga.com/wp-content/uploads/2014/05/yoga101.jpg")
+cyng = Activity.create("activity" => "Cycling", "intensity" => "medium", "equipment" => "bike, sneakers or cycling shoes, helmet", "photo_url" => "http://www.cycleclub.com/wp-content/uploads/2012/06/Cycling.jpg")
+wght = Activity.create("activity" => "Weight Training", "intensity" => "medium", "equipment" => "weights, sneakers", "photo_url" => "http://oaclubs.files.wordpress.com/2011/07/weight-lifting-group-class.jpg")
 
 Type.delete_all
 strength = Type.create("name" => "strength")
@@ -49,6 +49,8 @@ Combo.create("activity_id" => cyng.id, "location_id" => outside.id, "type_id" =>
 User.delete_all
 sheila = User.create("username" => "ssh1030", "password" => "running", "name" => "Sheila Shah")
 jordan = User.create("username" => "jcstewart09", "password" => "swimming", "name" => "Jordan Stewart")
+
+
 
 
 
