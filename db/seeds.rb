@@ -46,6 +46,9 @@ Combo.create("activity_id" => wght.id, "location_id" => ult.id, "type_id" => str
 Combo.create("activity_id" => wght.id, "location_id" => eac.id, "type_id" => strength.id)
 Combo.create("activity_id" => cyng.id, "location_id" => outside.id, "type_id" => cardio.id)
 
+User.delete_all
+sheila = User.create("username" => "ssh1030", "password" => "running", "name" => "Sheila Shah")
+jordan = User.create("username" => "jcstewart09", "password" => "swimming", "name" => "Jordan Stewart")
 
 
 
