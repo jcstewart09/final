@@ -7,14 +7,14 @@ outside = Location.create("name" => "Outside", "address" => "Anywhere Outside", 
 
 
 Activity.delete_all
-bxg = Activity.create("activity" => "boxing", "intensity" => "high", "equipment" => "gloves, sneakers")
-swmg = Activity.create("activity" => "swimming", "intensity" => "high", "equipment" => "swimming suit, goggles")
-csft = Activity.create("activity" => "crossfit", "intensity" => "high", "equipment" => "sneakers")
-rnng = Activity.create("activity" => "running", "intensity" => "high", "equipment" => "sneakers")
-spng = Activity.create("activity" => "spinning", "intensity" => "medium", "equipment" => "sneakers or cycling shoes")
-yga = Activity.create("activity" => "yoga", "intensity" => "low", "equipment" => "yoga mat")
-cyng = Activity.create("activity" => "cycling", "intensity" => "medium", "equipment" => "bike, sneakers or cycling shoes, helmet")
-wght = Activity.create("activity" => "weight training", "intensity" => "medium", "equipment" => "weights, sneakers")
+bxg = Activity.create("activity" => "Boxing", "intensity" => "high", "equipment" => "gloves, sneakers")
+swmg = Activity.create("activity" => "Swimming", "intensity" => "high", "equipment" => "swimming suit, goggles")
+csft = Activity.create("activity" => "Crossfit", "intensity" => "high", "equipment" => "sneakers")
+rnng = Activity.create("activity" => "Running", "intensity" => "high", "equipment" => "sneakers")
+spng = Activity.create("activity" => "Spinning", "intensity" => "medium", "equipment" => "sneakers or cycling shoes")
+yga = Activity.create("activity" => "Yoga", "intensity" => "low", "equipment" => "yoga mat")
+cyng = Activity.create("activity" => "Cycling", "intensity" => "medium", "equipment" => "bike, sneakers or cycling shoes, helmet")
+wght = Activity.create("activity" => "Weight training", "intensity" => "medium", "equipment" => "weights, sneakers")
 
 Type.delete_all
 strength = Type.create("name" => "strength")

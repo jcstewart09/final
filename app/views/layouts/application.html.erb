@@ -16,15 +16,15 @@
       <div class="header">
         <div class="row">
           <div class="col-md-12">
-            <h1>Movie Database</h1>
+            <h1>Workout Database</h1>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8">
-            <%= link_to "Movies", "/movies", "class" => "item-link"  %> |
-            <%= link_to "Actors", "/actors" %> |
-            <%= link_to "Directors", "/directors" %>
+            <%= link_to "Workouts", "/activities", "class" => "item-link"  %> |
+            <%= link_to "Locations", "/locations" %> |
+            <%= link_to "Types", "/types" %>
           </div>
           <div class="pull-right">
             <% user = User.find_by("id" => cookies["user_id"]) %>
@@ -48,6 +48,4 @@
 
   </body>
 </html>
-
-
 

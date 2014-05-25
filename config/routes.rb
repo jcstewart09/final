@@ -38,7 +38,6 @@ Final::Application.routes.draw do
 
   # --- Read
   get "/activities" => 'activities#index'
-  get "/activities/:id" => 'activities#show'
 
   # -- Update
   get "/activities/:id/edit" => 'activities#edit'
