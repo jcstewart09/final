@@ -1,5 +1,10 @@
 class SessionsController < ApplicationController
 
+  def logout
+    cookies["user_id"] = nil
+    redirect_to "/", :notice => "See ya!"
+  end
+
   def authenticate
     the_user = User.find_by("username" => params["username"])
     if the_user != nil

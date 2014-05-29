@@ -5,6 +5,7 @@ Final::Application.routes.draw do
 
   # Sign-In and Sign-Out
 
+  get "/logout" => 'sessions#logout'
   get "/login" => 'sessions#login'
   post "/authenticate" => 'sessions#authenticate'
 
@@ -24,7 +25,6 @@ Final::Application.routes.draw do
 
   # --- Delete
   delete "/users/:id" => 'users#destroy'
-
 
 
   # Resource: Locations
@@ -51,12 +51,29 @@ Final::Application.routes.draw do
   # --- Delete
   delete "/activities/:id" => 'activities#destroy'
 
+  # Resource: Workouts
+
+  # --- Create
+  get "/workouts/new" => 'workouts#new'
+  post "/workouts" => 'workouts#create'
+
+  # --- Read
+  get "/workouts" => 'workouts#index'
+  get "/workouts/:id" => 'workouts#show'
+
+  # -- Update
+  get "/workouts/:id/edit" => 'workouts#edit'
+  patch "/workouts/:id" => 'workouts#update'
+
+  # --- Delete
+  delete "/workouts/:id" => 'workouts#destroy'
+
 
   # Resource: Types
 
   # --- Read
   get "/types" => 'types#index'
-  get "/types/:id" => 'movies#show'
+  get "/types/:id" => 'types#show'
 
   # --- Delete
   delete "/types/:id" => 'types#destroy'
