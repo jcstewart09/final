@@ -9,16 +9,14 @@
    <img src= "<%= the_location["loc_photo"] %>" width="120" >
 
 <p> <%= link_to "Class Schedule", the_location["schedule_link"] %> </p>
-
 <p> <%= link_to "Website", the_location["website_link"] %> </p>
-
 
 
 <h4>Activities Offered at this Location</h4>
 
 <ul>
 
-  <% combo.each do |combo| %>
+      <% combo.each do |combo| %>
       <% activity = Activity.find_by("id" => combo["activity_id"]) %>
       <% type = Type.find_by("id" => combo["type_id"]) %>
     <li>
@@ -28,7 +26,13 @@
   <% end %>
 
 </ul>
-<div class="col-sm-4">
-<iframe src="<%= the_location["schedule_link"] %>" </iframe>
+<div class="column">
+  <div class="col-md-6">
+    <div class="row-md-12">
+<iframe width="900" height="620" src="<%= the_location["schedule_link"] %>" </iframe>
+</iframe>
+    </div>
+  </div>
+</div>
 
 

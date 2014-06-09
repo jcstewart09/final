@@ -36,10 +36,6 @@ Final::Application.routes.draw do
 
   # Resource: Activities
 
-  # --- Create
-  get "/activities/new" => 'activities#new'
-  post "/activities" => 'activities#create'
-
   # --- Read
   get "/activities" => 'activities#index'
   get "/activities/:id" => 'activities#show'
@@ -56,18 +52,6 @@ Final::Application.routes.draw do
   # --- Create
   get "/workouts/new" => 'workouts#new'
   post "/workouts" => 'workouts#create'
-
-  # --- Read
-  get "/workouts" => 'workouts#index'
-  get "/workouts/:id" => 'workouts#show'
-
-  # -- Update
-  get "/workouts/:id/edit" => 'workouts#edit'
-  patch "/workouts/:id" => 'workouts#update'
-
-  # --- Delete
-  delete "/workouts/:id" => 'workouts#destroy'
-
 
   # Resource: Types
 

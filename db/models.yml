@@ -1,8 +1,3 @@
-User:
-  - username: string
-  - password: string
-  - name: string
-
 Location:
   - name: string
   - address: string
@@ -26,10 +21,17 @@ Combo:
 
 Workout:
   - user_id: string
-  - combo_id: integer
+  - combo_id: string
   - day: date
-  - start_time: timestamp
-  - end_time: timestamp
+  - start_time: time
+  - end_time: time
+
+User:
+  - username: string
+  - password: string
+  - name: string
+  - photo_url: string
+
 
 
 
