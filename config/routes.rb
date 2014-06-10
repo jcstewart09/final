@@ -44,8 +44,6 @@ Final::Application.routes.draw do
   get "/activities/:id/edit" => 'activities#edit'
   patch "/activities/:id" => 'activities#update'
 
-  # --- Delete
-  delete "/activities/:id" => 'activities#destroy'
 
   # Resource: Workouts
 
@@ -58,9 +56,6 @@ Final::Application.routes.draw do
   # --- Read
   get "/types" => 'types#index'
   get "/types/:id" => 'types#show'
-
-  # --- Delete
-  delete "/types/:id" => 'types#destroy'
 
 
 
