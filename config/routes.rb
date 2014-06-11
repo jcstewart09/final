@@ -23,10 +23,6 @@ Final::Application.routes.draw do
   get "/users/:id/edit" => 'users#edit'
   patch "/users/:id" => 'users#update'
 
-  # --- Delete
-  delete "/users/:id" => 'users#destroy'
-
-
   # Resource: Locations
 
   # --- Read
@@ -39,10 +35,6 @@ Final::Application.routes.draw do
   # --- Read
   get "/activities" => 'activities#index'
   get "/activities/:id" => 'activities#show'
-
-  # -- Update
-  get "/activities/:id/edit" => 'activities#edit'
-  patch "/activities/:id" => 'activities#update'
 
 
   # Resource: Workouts
